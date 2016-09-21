@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="EAJ-QT-kxd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="EAJ-QT-kxd">
                                         <rect key="frame" x="0.0" y="65" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EAJ-QT-kxd" id="akx-du-9Cq">
@@ -43,7 +43,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="第一页" id="hZJ-Dv-yG6"/>
+                    <navigationItem key="navigationItem" title="第一页" id="hZJ-Dv-yG6">
+                        <barButtonItem key="backBarButtonItem" title=" " id="hBE-o6-Oo9"/>
+                        <barButtonItem key="leftBarButtonItem" image="icon_message.png" style="plain" id="Fch-80-xKA"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="B6J-zM-V6U"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableV" destination="MJ6-ry-gZh" id="qJn-KO-9F4"/>
                     </connections>
@@ -89,4 +93,7 @@
             <point key="canvasLocation" x="3237.5999999999999" y="-247.82608695652175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_message.png" width="44" height="44"/>
+    </resources>
 </document>
