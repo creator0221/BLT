@@ -18,6 +18,7 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.groupTableViewBackground
+        self.title = "时程adshflasdhfad"
         self.tabBarItem = UITabBarItem(title: "时程", image: UIImage(named: "schedul"), selectedImage: UIImage(named: "schedul"))
         
         // Create all of views.
