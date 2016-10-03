@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.swift
 //  blt
 //
@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.makeKeyAndVisible()
+        self.window?.backgroundColor = UIColor.white
+        
+        let firstViewController = ScheduleController()
+        let navigationController = UINavigationController(rootViewController: firstViewController)
+        
+        let rootController = UITabBarController()
+        rootController.setViewControllers([navigationController], animated: true)
+        
+        self.window?.rootViewController = rootController
+        
         return true
     }
 
